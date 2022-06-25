@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TouchMe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="game_mechanics.js" charset="utf-8"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-2">
+          <h1>TouchMe!!</h1>
+        </div>
+        <div class="col-lg-auto">
+          <h2 id="score">Score: 0</h2>
+        </div>
+        <div class="col-lg-auto">
+          <h2 id="chance">Life: 5</h2>
+        </div>
+        
+
+      </div>
+    </div>
+
+    <div class="touchme-main"id="maindiv">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="obj1 click_div"  onclick="addcount(this.className)" >
+          <img class="img1"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj2 click_div"  onclick="addcount(this.className)" >
+          <img class="img2"  id="img" src="image/obj1.png" alt="obj1_image" >
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj3 click_div"  onclick="addcount(this.className)" >
+          <img class="img3"  id="img" src="image/obj1.png" alt="obj1_image" >
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj4 click_div"  onclick="addcount(this.className)" >
+          <img class="img4"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj5 click_div"  onclick="addcount(this.className)" >
+          <img class="img5"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj6 click_div"  onclick="addcount(this.className)" >
+          <img class="img6"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj7 click_div"  onclick="addcount(this.className)" >
+          <img class="img7"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj8 click_div"  onclick="addcount(this.className)" >
+          <img class="img8"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj9 click_div"  onclick="addcount(this.className)" >
+          <img class="img9"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="obj10 click_div"  onclick="addcount(this.className)" >
+          <img class="img10"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj11 click_div"  onclick="addcount(this.className)" >
+          <img class="img11"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj12 click_div"  onclick="addcount(this.className)" >
+          <img class="img12"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj13 click_div"  onclick="addcount(this.className)" >
+          <img class="img13"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj14 click_div"  onclick="addcount(this.className)" >
+          <img class="img14"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj15 click_div"  onclick="addcount(this.className)" >
+          <img class="img15"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj16 click_div"  onclick="addcount(this.className)" >
+          <img class="img16"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj17 click_div"  onclick="addcount(this.className)" >
+          <img class="img17"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj18 click_div"  onclick="addcount(this.className)" >
+          <img class="img18"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="obj19 click_div"  onclick="addcount(this.className)" >
+          <img class="img19"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj20 click_div"  onclick="addcount(this.className)" >
+          <img class="img20"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj21 click_div"  onclick="addcount(this.className)" >
+          <img class="img21"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj22 click_div"  onclick="addcount(this.className)" >
+          <img class="img22"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj23 click_div"  onclick="addcount(this.className)" >
+          <img class="img23"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj24 click_div"  onclick="addcount(this.className)" >
+          <img class="img24"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj25 click_div"  onclick="addcount(this.className)" >
+          <img class="img25"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj26 click_div"  onclick="addcount(this.className)" >
+          <img class="img26"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj27 click_div"  onclick="addcount(this.className)" >
+          <img class="img27"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="obj28 click_div"  onclick="addcount(this.className)" >
+          <img class="img28"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj29 click_div"  onclick="addcount(this.className)" >
+          <img class="img29"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj30 click_div"  onclick="addcount(this.className)" >
+          <img class="img30"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj31 click_div"  onclick="addcount(this.className)" >
+          <img class="img31"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj32 click_div"  onclick="addcount(this.className)" >
+          <img class="img32"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj33 click_div"  onclick="addcount(this.className)" >
+          <img class="img33"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj34 click_div"  onclick="addcount(this.className)" >
+          <img class="img34"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj35 click_div"  onclick="addcount(this.className)" >
+          <img class="img35"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj36 click_div"  onclick="addcount(this.className)" >
+          <img class="img36"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="obj37 click_div"  onclick="addcount(this.className)" >
+          <img class="img37"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj38 click_div"  onclick="addcount(this.className)" >
+          <img class="img38"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj39 click_div"  onclick="addcount(this.className)" >
+          <img class="img39"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj40 click_div"  onclick="addcount(this.className)" >
+          <img class="img40"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj41 click_div"  onclick="addcount(this.className)" >
+          <img class="img41"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj42 click_div"  onclick="addcount(this.className)" >
+          <img class="img42"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj43 click_div"  onclick="addcount(this.className)" >
+          <img class="img43"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj44 click_div"  onclick="addcount(this.className)" >
+          <img class="img44"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj45 click_div"  onclick="addcount(this.className)" >
+          <img class="img45"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="obj46 click_div"  onclick="addcount(this.className)" >
+          <img class="img46"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj47 click_div"  onclick="addcount(this.className)" >
+          <img class="img47"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj48 click_div"  onclick="addcount(this.className)" >
+          <img class="img48"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj49 click_div"  onclick="addcount(this.className)" >
+          <img class="img49"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj50 click_div"  onclick="addcount(this.className)" >
+          <img class="img50"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj51 click_div"  onclick="addcount(this.className)" >
+          <img class="img51"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj52 click_div"  onclick="addcount(this.className)" >
+          <img class="img52"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj53 click_div"  onclick="addcount(this.className)" >
+          <img class="img53"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj54 click_div"  onclick="addcount(this.className)"  >
+          <img class="img54"  id="img" src="image/obj1.png" alt="obj1_image" >
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="obj55 click_div"  onclick="addcount(this.className)" >
+          <img class="img55"  id="img" src="image/obj1.png" alt="obj1_image" >
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj56 click_div"  onclick="addcount(this.className)" >
+          <img class="img56"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj57 click_div"  onclick="addcount(this.className)" >
+          <img class="img57"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj58 click_div"  onclick="addcount(this.className)" >
+          <img class="img58"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj59 click_div"  onclick="addcount(this.className)" >
+          <img class="img59"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj60 click_div"  onclick="addcount(this.className)" >
+          <img class="img60"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj61 click_div"  onclick="addcount(this.className)" >
+          <img class="img61"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj62 click_div"  onclick="addcount(this.className)" >
+          <img class="img62"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+        <div class="col">
+          <div class="obj63 click_div"  onclick="addcount(this.className)" >
+          <img class="img63"  id="img" src="image/obj1.png" alt="obj1_image">
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    </div>
+
+  </body>
+</html>

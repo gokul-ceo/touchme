@@ -1,0 +1,55 @@
+/* body */
+body{
+  text-align: center;
+}
+/* ----------- */
+
+/* touchme-main */
+#maindiv{
+  width: auto;
+  height: 500px;
+  border: 5px solid blue;
+  padding: 10px;
+  margin: 10px;
+  position: static;
+  cursor: crosshair;
+}
+.click_div {
+  visibility: hidden;
+}
+img{
+  height:70px;
+
+  visibility: hidden;
+
+}
+.active {
+  visibility: visible;
+  /* transition: 0.3s; */
+}
+/* .gameover div{
+  visibility: hidden;
+} */
+.over{
+  display:none;
+}
+.gameover h1{
+  padding-top: 20px;
+}
+
+.gameover{
+  text-align:center;
+
+  width:auto;
+  height: 200px;
+      background-color: blue;
+
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: auto;
+
+}
